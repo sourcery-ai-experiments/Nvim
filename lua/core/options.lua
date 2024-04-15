@@ -95,6 +95,11 @@ vim.o.background = "dark"
 vim.o.termguicolors = true
 vim.opt.termguicolors = true
 
+-- 折叠
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#folder()"
+-- vim.opt.foldlevel = 99
+
 -- Don't pass messages to |ins-completin menu|
 -- 状态栏消息更简洁
 -- vim.o.shortmess = vim.o.shortmess .. 'c'

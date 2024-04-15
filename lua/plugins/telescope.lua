@@ -32,13 +32,19 @@ return {
           v= {
           },
         },
-      },
+ },
       -- 内置 pickers 配置
       pickers = {
         picker_name = {
         },
         find_files = {
           theme = "dropdown",
+        },
+        oldfiles = {
+          theme = "dropdown",
+        },
+        live_grep = {
+          theme = "dropdown"
         },
       },
       -- 扩展插件配置
