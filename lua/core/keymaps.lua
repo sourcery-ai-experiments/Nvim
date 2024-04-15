@@ -12,21 +12,20 @@ local opt = { noremap = true, silent = true }
 -- 取消 s 默认功能
 map.set("n", "s", "", opt)
 
--- TODO:分屏浏览存在问题
 --  分屏
-map.set("n", "<A-z>", ":vsp<CR>", opt)
-map.set("n", "sh", ":sp<CR>", opt)
+map.set("n", "<leader>sv", ":vsp<CR>", opt)
+map.set("n", "<leader>sh", ":sp<CR>", opt)
 
 -- 关闭当前窗口
-map.set("n", "sc", "<C-w>c", opt)
+map.set("n", "<leader>sc", "<C-w>c", opt)
 -- 关闭其他窗口
-map.set("n", "so", "<C-w>o", opt)
+map.set("n", "<leader>so", "<C-w>o", opt)
 
 -- 光标跳转
 map.set("n", "<A-h>", "<C-w>h", opt)
-map.set("n", "<A->j", "<C-w>j", opt)
-map.set("n", "<A->k", "<C-w>k", opt)
-map.set("n", "<A->l", "<C-w>l", opt)
+map.set("n", "<A-j>", "<C-w>j", opt)
+map.set("n", "<A-k>", "<C-w>k", opt)
+map.set("n", "<A-l>", "<C-w>l", opt)
 
 -- 左右比例控制
 map.set("n", "<C-Left>", ":vertical resize +10<CR>", opt)
@@ -50,5 +49,5 @@ map.set("n", "<A-m>", ":NvimTreeToggle<CR>", opt)
 -- 左右 tab 切换
 map.set("n", "<C-h>", ":BufferLineCyclePrev<CR>", opt)
 map.set("n", "<C-l>", ":BufferLineCycleNext<CR>", opt)
--- 关闭当前标签页
-map.set("n", "<C-w>", ":Bdelete!<CR>", opt)
+-- 关闭当前标签页 与关闭当前窗口功能重复，不使用
+-- map.set("n", "<C-w>", ":Bdelete!<CR>", opt)
