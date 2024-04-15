@@ -97,4 +97,4 @@ vim.opt.termguicolors = true
 
 -- Don't pass messages to |ins-completin menu|
 -- 状态栏消息更简洁
-vim.o.shortmess = vim.o.shortmess .. 'c'
+-- vim.o.shortmess = vim.o.shortmess .. 'c'

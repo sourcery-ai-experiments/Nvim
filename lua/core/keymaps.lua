@@ -12,8 +12,9 @@ local opt = { noremap = true, silent = true }
 -- 取消 s 默认功能
 map.set("n", "s", "", opt)
 
+-- TODO:分屏浏览存在问题
 --  分屏
-map.set("n", "sv", ":vsp<CR>", opt)
+map.set("n", "<A-z>", ":vsp<CR>", opt)
 map.set("n", "sh", ":sp<CR>", opt)
 
 -- 关闭当前窗口
@@ -44,3 +45,10 @@ map.set("v", ">", ">gv", opt)
 
 -- nvim-tree
 map.set("n", "<A-m>", ":NvimTreeToggle<CR>", opt)
+
+-- bufferline
+-- 左右 tab 切换
+map.set("n", "<C-h>", ":BufferLineCyclePrev<CR>", opt)
+map.set("n", "<C-l>", ":BufferLineCycleNext<CR>", opt)
+-- 关闭当前标签页
+map.set("n", "<C-w>", ":Bdelete!<CR>", opt)
