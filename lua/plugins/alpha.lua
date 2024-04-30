@@ -34,7 +34,8 @@ return {
     db.section.footer.opts.hl = "Type"
 
     db.opts.opts.noautocmd = true
-    require("alpha").setup(db.opts)
+local alpha = require("alpha")
+alpha.setup(db.opts)
   end,
 }
 
