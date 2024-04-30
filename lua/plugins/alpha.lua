@@ -3,6 +3,7 @@ return {
   event = "VimEnter",
   config = function()
     local db = require("alpha.themes.dashboard")
+    local alpha = require("alpha")
     db.section.header.val = {
       [[]],
       [[]],
