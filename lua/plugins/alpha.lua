@@ -2,11 +2,6 @@ return {
   "goolord/alpha-nvim",
   event = "VimEnter",
   config = function()
-    local status, alpha = pcall(require, "alpha")
-    if not status then 
-      return
-    end
-
     local db = require("alpha.themes.dashboard")
     db.section.header.val = {
       [[]],
